@@ -64,8 +64,16 @@ const VandorSchema = new Schema({
         type : mongoose.Schema.ObjectId,
         ref : 'Food'
     }]
-},
-{
+},{
+    toJSON : {
+        transform(doc, ret){
+            delete ret.password;
+            delete ret.salt;
+            delete ret.__v;
+            delete ret.createdAt;
+            delete ret.updatedAt;
+        }  
+    },
     timestamps : true
 });
 
