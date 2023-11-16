@@ -2,7 +2,7 @@
   "name": "food_order_backend",
   "version": "1.0.0",
   "description": "This is backend system for a food delivering app built over nodejs written in typescript",
-  "main": "server.ts",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.ts"
